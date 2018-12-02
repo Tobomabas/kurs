@@ -13,5 +13,11 @@ public class Main {
         Root root = new RootGrandson();
 
         Car car = new RacingCar();
+
+        System.out.println("/////////////////////////////////////");
+
+        RacingCar racingCar = new RacingCar("toyota");
+        System.out.println(racingCar.getClass());
+
     }
 }
