@@ -2,18 +2,10 @@ package pl.com.tkarolczyk.anonymous_classes.null_avoid.football.optional;
 
 public class Chair {
 
-    private int number;
+    private Number number;
 
-    public Chair(int number) {
-        this.number = number;
-    }
-
-    public int getNumber() {
-        return number;
-    }
-
-    public void setNumber(int number) {
-        this.number = number;
+    public Chair(Number number) {
+        this.number = validate(number);
     }
 
     @Override
@@ -21,5 +13,21 @@ public class Chair {
         return "Chair{" +
                 "number=" + number +
                 '}';
+    }
+
+    public Number getNumber() {
+        return number;
+    }
+
+    public void setNumber(Number number) {
+        this.number = validate(number);
+    }
+
+    private Number validate (Number number){
+
+        if (null == number){
+            throw new IllegalArgumentException("Stadion Cannot be NULL!!");
+        }
+        return number;
     }
 }

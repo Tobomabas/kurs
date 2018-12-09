@@ -1,10 +1,9 @@
-package pl.com.tkarolczyk.anonymous_classes.null_avoid.football;
+package pl.com.tkarolczyk.anonymous_classes.null_avoid.football.optional;
 
-public class Chair {
+public class Number {
+    int number;
 
-    private int number;
-
-    public Chair(int number) {
+    public Number(int number) {
         this.number = number;
     }
 
@@ -18,11 +17,11 @@ public class Chair {
 
     @Override
     public String toString() {
-        return "Chair{" +
+        return "Number{" +
                 "number=" + number +
                 '}';
     }
 
 
-
 }
+
