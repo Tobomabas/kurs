@@ -1,5 +1,7 @@
 package pl.com.tkarolczyk.anonymous_classes.null_avoid.football.optional;
 
+import java.util.Optional;
+
 public class Stadion {
 
     private Chair chair;
@@ -8,8 +10,8 @@ public class Stadion {
         this.chair = chair;
     }
 
-    public Chair getChair() {
-        return chair;
+    public Optional<Chair> getChair() {
+        return Optional.ofNullable(chair);
     }
 
     public void setChair(Chair chair) {

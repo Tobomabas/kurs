@@ -26,7 +26,7 @@ public class Chair {
     private Number validate (Number number){
 
         if (null == number){
-            throw new IllegalArgumentException("Stadion Cannot be NULL!!");
+            throw new IllegalArgumentException("number Cannot be NULL!!");
         }
         return number;
     }

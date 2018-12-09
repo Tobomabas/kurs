@@ -23,7 +23,7 @@ public class InterviewExample1 {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                System.out.println("B");
+                System.out.println("Box");
             }
         });
 
