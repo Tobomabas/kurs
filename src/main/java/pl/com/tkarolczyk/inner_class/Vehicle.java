@@ -2,9 +2,11 @@ package pl.com.tkarolczyk.inner_class;
 
 public class Vehicle {
     private String vehicleName;
+    private Wheel wheels;
 
-    public Vehicle(String vehicleName) {
+    public Vehicle(String vehicleName, Wheel wheels) {
         this.vehicleName = vehicleName;
+        this.wheels = wheels;
     }
 
     @Override
@@ -13,6 +15,8 @@ public class Vehicle {
                 "vehicleName='" + vehicleName + '\'' +
                 '}';
     }
+
+
 
 
 
