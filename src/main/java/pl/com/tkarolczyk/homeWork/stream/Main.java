@@ -15,7 +15,6 @@ public class Main {
         Drink drink = new Drink(new Ingredient(new Soya(25), new Milk(), new Nuts()), true);
 
 
-
         List<Drink> drinks = Arrays.asList(
                 new Drink(new Ingredient(new Soya(25), new Milk(), new Nuts()), true),
                 new Drink(new Ingredient(new Soya(0), new Milk(), new Nuts()), false),
