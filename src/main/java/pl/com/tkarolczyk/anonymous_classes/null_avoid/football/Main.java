@@ -29,7 +29,7 @@ public class Main {
     private static int printNumberOfChair2(FootballClub footballClub){
         final int[] wynik = new int[1];
         Optional.ofNullable(footballClub)
-                .map(FootballClub::getStadion)
+                .map(footballClub1 -> footballClub1.getStadion())
                 .map(Stadion::getChair)
                 .map(Chair::getNumber)
                 .ifPresent(s -> wynik[0] = s);
