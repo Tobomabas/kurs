@@ -2,6 +2,7 @@ package pl.com.tkarolczyk.homeWork.stream;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -24,14 +25,13 @@ public class Main {
                 new Drink(new Ingredient(new Soya(25), new Milk(), new Nuts()), true),
                 new Drink(new Ingredient(new Soya(25), new Milk(), new Nuts()), true)
         );
-        System.out.println(getDrinkInpromotionWithoutSoya(drinks));
+        System.out.println(getDrinkInpromotionWithoutSoya(drinks, drink1 -> drink1.getIngredient().getSoya().getAmount()==0));// Czy Mariusz moze rozwinac krok po kroku te lambde
     }
 
-    private static List<Drink> getDrinkInpromotionWithoutSoya(List<Drink>drinks ){
+    private static List<Drink> getDrinkInpromotionWithoutSoya(List<Drink>drinks, Predicate <Drink> predicate){
         //List<Drink> result = new ArrayList<>();
 
         return drinks.stream()
-
 //                .filter(drink -> drink.isPromotion() == true)
 //                .map(drink -> drink.getIngredient())
 //                .map(ingredient -> ingredient.getSoya())
@@ -39,9 +39,10 @@ public class Main {
 //                .collect(Collectors.toList());
 
         .filter(drink -> drink.isPromotion()==true)
-                .filter(drink -> drink.getIngredient().getSoya().getAmount()==0)
+                .filter(predicate)
                 .collect(Collectors.toList());
     }
 
 
 }
+//drink -> drink.getIngredient().getSoya().getAmount()==0
