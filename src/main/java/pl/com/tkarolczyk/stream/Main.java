@@ -16,7 +16,7 @@ public class Main {
                 new Country(240_000_000, "Zimbabwe", 2312, 500),
                 new Country(420_000_000, "Japan", 3212, 25_000)
         );
-        List<Country> result =filterByMinimalNumberOfPeople2(countries, country -> country.getAveragePayCheck() > 10_000);
+        List<Country> result = filterByMinimalNumberOfPeople2(countries, country -> country.getAveragePayCheck() > 10_000);
         System.out.println(filterByMinimalNumberOfPeople2(countries, country -> country.getNumberOfPeople() >= 40_000));
         result.forEach(country -> System.out.println(country));
     }
