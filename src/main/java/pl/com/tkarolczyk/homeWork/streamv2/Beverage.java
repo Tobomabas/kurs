@@ -9,10 +9,19 @@ public class Beverage {
     private List<Ingredient> ingredientList = new ArrayList<>();
     private String beverageName;
 
+    @Override
+    public String toString() {
+        return "Beverage{" +
+                "ingredientList=" + ingredientList +
+                ", beverageName='" + beverageName + '\'' +
+                '}';
+    }
+
     public Beverage(String beverageName, List<Ingredient> ingredients){
 
         this.beverageName = beverageName;
         ingredientList.addAll(ingredients);
+
 
     }
 
