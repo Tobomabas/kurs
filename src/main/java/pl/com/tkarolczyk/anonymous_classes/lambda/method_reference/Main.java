@@ -33,13 +33,6 @@ public class Main {
     CarPrinter carPrinter = System.out::println;
     CarPrinter carPrinter2 = (Car car) -> System.out.println(car);
 
-
-
-
-
-
-
-
-
-
+    CarPrinter carPrinter3 = car -> car.printYourself();
+    CarPrinter carPrinter4 = Car::printYourself;
 }

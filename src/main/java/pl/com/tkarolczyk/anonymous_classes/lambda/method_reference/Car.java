@@ -44,4 +44,7 @@ public class Car {
 
         this.maxSpeed = maxSpeed;
     }
+    public void printYourself(){
+        System.out.println(toString());
+    }
 }

@@ -33,7 +33,5 @@ public class Main {
                 .filter(predicate)
                 .collect(Collectors.toList());
     }
-
-
 }
 //drink -> drink.getIngredient().getSoya().getAmount()==0

@@ -7,16 +7,11 @@ public class Main {
         Object object = new String("String");
 
 
-
-
         ((String)object).substring(3);
         String string = (String)object;
         string.substring(1);
 
-
-
         Number number = (Number) object;
-
 
     }
 
