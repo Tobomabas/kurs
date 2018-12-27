@@ -27,7 +27,9 @@ public class Main {
         Collections.sort(personList, new heightComaparator());
         System.out.println(personList);
 
-        Collections.sort(personList, (o1,o2) -> (o1.getAge()-o2.getAge()));
+        Collections.sort(personList, (o1,o2) -> {
+            return (o1.getAge() - o2.getAge());
+        });
         System.out.println(personList);
         
         Collections.sort(personList, (o1,o2) -> (int)(o1.getShoeSize()- o2.getShoeSize()));

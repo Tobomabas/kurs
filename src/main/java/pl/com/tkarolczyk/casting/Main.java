@@ -11,7 +11,6 @@ public class Main {
         String string = (String)object;
         string.substring(1);
 
-        Number number = (Number) object;
 
     }
 
