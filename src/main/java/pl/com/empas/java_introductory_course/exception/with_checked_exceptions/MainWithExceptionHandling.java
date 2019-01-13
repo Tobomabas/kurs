@@ -14,7 +14,7 @@ public class MainWithExceptionHandling {
             System.out.println(calculator.division(5, 3));
             System.out.println(calculator.division(5, 0));
         } catch (MyException exception) {
-            System.out.println("Exception occurred: " + exception);
+            System.out.println("exception occurred: " + exception);
         }
     }
 }

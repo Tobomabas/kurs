@@ -47,7 +47,7 @@ public class ThreeLevelExceptionTest {
             throw new MyException("Problem on level 3");
 
         } else if (counter == 4) {
-            throw new MyNewException("My New Exception ");
+            throw new MyNewException("My New exception ");
         }
 
 
