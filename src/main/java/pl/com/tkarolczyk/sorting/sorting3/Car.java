@@ -4,7 +4,8 @@ import org.jetbrains.annotations.NotNull;
 
 import java.time.LocalDate;
 
-public class Car implements Comparable <Car> {
+public class Car implements Comparable <Car>, CarConcat<Car> {
+
 
     private String brand;
     private String model;
@@ -63,8 +64,6 @@ public class Car implements Comparable <Car> {
     public void maybeComapre(Comparable<Car> carComparable){
 
 
-
-
     }
 
 
@@ -72,6 +71,21 @@ public class Car implements Comparable <Car> {
         return power-o.power;
 
     }
+
+    @Override
+    public void concatTwoBrands(Car object) {
+        System.out.println(brand + "-" + object.brand);
+
+    }
+
+    public void doSomething(CarConcat<Car> car){
+
+        car.concatTwoBrands(this);
+
+
+    }
+
+
 }
 
 

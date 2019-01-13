@@ -43,5 +43,27 @@ public class Main {
 
         carList.get(2).maybeComapre(o -> o.getPower());
 
+
+        System.out.println("////////////////////////////");
+        System.out.println("////////////////////////////");
+        System.out.println("////////////////////////////");
+        System.out.println("////////////////////////////");
+
+        carList.get(2).concatTwoBrands(carList.get(1));
+
+        carList.get(3).doSomething(object -> System.out.println((object.getBrand()+ "-")));
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
